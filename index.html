@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Países</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Buscador de Países</h1>
+        
+        <div class="search-container">
+            <input type="text" id="country-input" placeholder="Escribe el nombre de un país...">
+            <button id="search-btn"><i class="fas fa-search"></i> Buscar</button>
+        </div>
+        
+        <div class="country-info hidden" id="country-info">
+            <div class="flag-container">
+                <img id="country-flag" src="" alt="Bandera del país">
+                <h2 id="country-name"></h2>
+            </div>
+            
+            <div class="details-container">
+                <div class="detail">
+                    <i class="fas fa-landmark"></i>
+                    <span id="country-capital"></span>
+                </div>
+                <div class="detail">
+                    <i class="fas fa-globe"></i>
+                    <span id="country-region"></span>
+                </div>
+                <div class="detail">
+                    <i class="fas fa-users"></i>
+                    <span id="country-population"></span>
+                </div>
+                <div class="detail">
+                    <i class="fas fa-clock"></i>
+                    <span id="country-time"></span>
+                </div>
+                <div class="detail">
+                    <i class="fas fa-cloud"></i>
+                    <span id="country-weather"></span>
+                    <img id="weather-icon" src="" alt="Icono del clima" class="weather-icon">
+                </div>
+                <div class="detail">
+                    <i class="fas fa-language"></i>
+                    <span id="country-languages"></span>
+                </div>
+                <div class="detail">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <span id="country-currency"></span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="error hidden" id="error-message">
+            País no encontrado. Intenta con otro nombre.
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
